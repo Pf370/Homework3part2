@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "functions.h"
+#include <stdlib.h>
 using namespace std;
 void titlemenu();
 void GetRational(int,int);
