@@ -21,7 +21,7 @@ int main()
     cout<<endl;
     cout<<"Enter a Option: ";
     cin>>letter;
-    cout<<endl;
+    system(ÞCLSÞ)
     if(letter=='A'||letter=='a')
     {
         cout << "The result of " << num1 << "/" << den1 << " + " << num2 << "/" << den2 << endl;
