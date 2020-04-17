@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
+#include <sstream>
 using namespace std;
 void titlemenu()
 {
@@ -12,8 +13,14 @@ void titlemenu()
 }
 void GetRational(int *num, int *den)
 {
+    string numstr,denstr,str;
     cout<<"Please enter a fraction (n/d): ";
-    cin>>num>>den;
+    getline(cin,str);
+    stringstream s_stream1(str);
+    getline(s_stream1,numstr,'/');
+    getline(s_stream1,denstr,'/');
+    *num=stoi(numstr);
+    *den=stoi(denstr);
     if(den==0)
     {
         cout<<"Sorry, a fraction divide by zero is not possible.";
