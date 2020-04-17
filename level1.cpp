@@ -15,8 +15,6 @@ int main()
     int num1,den1,num2,den2;
     int anum=0;
     int aden=0;
-    GetRational(num1,den1);
-    GetRational(num2,den2);
     titlemenu();
     cout<<endl;
     cout<<"Enter a Option: ";
@@ -24,12 +22,16 @@ int main()
     system(ÞCLSÞ)
     if(letter=='A'||letter=='a')
     {
+        GetRational(num1,den1);
+        GetRational(num2,den2);
         cout << "The result of " << num1 << "/" << den1 << " + " << num2 << "/" << den2 << endl;
         AddRational(anum, aden, num1, den1, num2, den2);
         cout<<anum<<"/"<<aden;
     }
     else if(letter=='S'||letter=='s')
     {
+        GetRational(num1,den1);
+        GetRational(num2,den2);
         cout << "The result of " << num1 << "/" << den1 << " - " << num2 << "/" << den2 << endl;
         SubtractRational(anum, aden, num1, den1, num2, den2);
         cout<<anum<<"/"<<aden;
