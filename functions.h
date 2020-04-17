@@ -10,7 +10,7 @@ void titlemenu()
     cout<<"(S)Subtraction"<<endl;
     cout<<"(Q)Quit"<<endl;
 }
-void GetRational(int num, int den)
+void GetRational(int *num, int *den)
 {
     cout<<"Please enter a fraction (n/d): ";
     cin>>num>>den;
