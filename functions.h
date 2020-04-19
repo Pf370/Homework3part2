@@ -3,6 +3,14 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+int gcd(int a, int b)
+{
+    if(a==0)
+    {
+        return b;
+    }
+    return gcd(b%a,a);
+}
 void titlemenu()
 {
     cout<<"Rational Calculator"<<endl;
@@ -17,22 +25,13 @@ void GetRational(int *num, int *den)
     if(den==0)
     {
         cout<<"Sorry, a fraction divide by zero is not possible.";
-        cout<<"Try again.";
     }
 }
 void reduce(int *num,int *den)
 {
-    int A=num;
-    int B=den;
-    int R=(A%B);
-    while(R!=0)
-    {
-        A=B;
-        B=R;
-        R=(A%B);
-    }
-    num=num/B;
-    den=den/B;
+    int gcf=gcd(num,den);
+    num /=gcf;
+    den /=gcf;
 }
 void AddRational(int *anum, int *aden, int num1, int den1,int num2, int den2) 
 {
