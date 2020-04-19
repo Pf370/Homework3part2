@@ -4,6 +4,9 @@
 #include <stdlib.h>
 using namespace std;
 void titlemenu();
+int gcd(int,int)
+void add();
+void substract();
 void GetRational(int,int);
 void reduce(int &,int &);
 void AddRational(int,int,int,int,int,int);
