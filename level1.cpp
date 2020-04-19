@@ -1,3 +1,9 @@
+//****************************************************************************** 
+// Team #  08        CSCI/CMPE 1370            Spring2020            Homework # 3 
+// Liborio Garza
+// Pablo J. Flores Jr.
+//Using your own words, write here a description of what the program does.   
+//******************************************************************************
 #include <iostream>
 #include <cmath>
 #include "functions.h"
