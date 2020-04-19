@@ -54,3 +54,33 @@ void DisplayRational(int num, int den)
        cout<<"/"<<aden<<endl;
    }
 }
+void add()
+{
+    int num1,den1,num2,den2,anum,aden;
+    char ans;
+    while(ans=='Y'|| ans=='y')
+    {
+        GetRational(num1,den1);
+        GetRational(num2,den2);
+        AddRational(anum,aden,num1,den1,num2,den2);
+        DisplayRational(anum,aden);
+        cout<<"Do you want to add again(y/n): ";
+        cin>>ans;
+        system("CLS");
+    }
+}
+void subtract()
+{
+    int num1,den1,num2,den2,anum,aden;
+    char ans;
+    while(ans=='Y'|| ans=='y')
+    {
+        GetRational(num1,den1);
+        GetRational(num2,den2);
+        SubtractRational(anum,aden,num1,den1,num2,den2);
+        DisplayRational(anum,aden);
+        cout<<"Do you want to subtract again(y/n): ";
+        cin>>ans;
+        system("CLS");
+    }
+}
