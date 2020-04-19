@@ -20,12 +20,13 @@ void titlemenu()
 }
 void GetRational(int *num, int *den)
 {
-    cout<<"Please enter a fraction (n/d): ";
-    cin>>num>>den;
+    char c;
+    cout<<"Please enter a fraction: ";
+    cin>>num>>c>>den;
     if(den==0)
     {
         cout<<"Sorry, a fraction divide by zero is not possible.";
-    }
+    }   
 }
 void reduce(int *num,int *den)
 {
@@ -47,8 +48,9 @@ void SubtractRational(int *anum,int *aden,int num1,int den1,int num2,int den2)
 }
 void DisplayRational(int num, int den) 
 {
-    if (den == 1) 
-    {
-        cout << num;
-    }
+    cout<<"The result is: "<<anum;
+   if(aden!=1)
+   {
+       cout<<"/"<<aden<<endl;
+   }
 }
