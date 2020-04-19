@@ -4,7 +4,7 @@
 #include <stdlib.h>
 using namespace std;
 void titlemenu();
-int gcd(int,int)
+int gcd(int,int);
 void add();
 void substract();
 void GetRational(int,int);
@@ -15,9 +15,6 @@ void DisplayRational(int,int);
 int main()
 {
     char letter;
-    int num1,den1,num2,den2;
-    int anum=0;
-    int aden=0;
     titlemenu();
     cout<<endl;
     cout<<"Enter a Option: ";
@@ -25,19 +22,11 @@ int main()
     system(ÞCLSÞ)
     if(letter=='A'||letter=='a')
     {
-        GetRational(num1,den1);
-        GetRational(num2,den2);
-        cout << "The result of " << num1 << "/" << den1 << " + " << num2 << "/" << den2 << endl;
-        AddRational(anum, aden, num1, den1, num2, den2);
-        cout<<anum<<"/"<<aden;
+        add();
     }
     else if(letter=='S'||letter=='s')
     {
-        GetRational(num1,den1);
-        GetRational(num2,den2);
-        cout << "The result of " << num1 << "/" << den1 << " - " << num2 << "/" << den2 << endl;
-        SubtractRational(anum, aden, num1, den1, num2, den2);
-        cout<<anum<<"/"<<aden;
+        subtract();
     }
     else
     {
