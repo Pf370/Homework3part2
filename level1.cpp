@@ -7,10 +7,10 @@ void titlemenu();
 int gcd(int,int);
 void add();
 void substract();
-void GetRational(int,int);
+void GetRational(int &,int &);
 void reduce(int &,int &);
-void AddRational(int,int,int,int,int,int);
-void SubtractRational(int,int,int,int,int,int);
+void AddRational(int &,int &,int,int,int,int);
+void SubtractRational(int &,int &,int,int,int,int);
 void DisplayRational(int,int);
 int main()
 {
