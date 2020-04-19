@@ -18,7 +18,7 @@ void titlemenu()
     cout<<"(S)Subtraction"<<endl;
     cout<<"(Q)Quit"<<endl;
 }
-void GetRational(int *num, int *den)
+void GetRational(int &num, int &den)
 {
     char c;
     cout<<"Please enter a fraction: ";
@@ -28,19 +28,19 @@ void GetRational(int *num, int *den)
         cout<<"Sorry, a fraction divide by zero is not possible.";
     }   
 }
-void reduce(int *num,int *den)
+void reduce(int &num,int &den)
 {
     int gcf=gcd(num,den);
     num /=gcf;
     den /=gcf;
 }
-void AddRational(int *anum, int *aden, int num1, int den1,int num2, int den2) 
+void AddRational(int &anum, int &aden, int num1, int den1,int num2, int den2) 
 {
     anum = (num1*den2) + (num2*den1);
     aden = (den1*den2);
     reduce(anum, aden);
 }
-void SubtractRational(int *anum,int *aden,int num1,int den1,int num2,int den2)
+void SubtractRational(int &anum,int &aden,int num1,int den1,int num2,int den2)
 {
     anum = (num1*den2) - (num2*den1);
     aden = (den1*den2);
