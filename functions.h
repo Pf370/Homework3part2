@@ -21,12 +21,16 @@ void titlemenu()
 void GetRational(int &num, int &den)
 {
     char c;
-    cout<<"Please enter a fraction: ";
-    cin>>num>>c>>den;
-    if(den==0)
+    while(true)
     {
-        cout<<"Sorry, a fraction divide by zero is not possible.";
-    }   
+        cout<<"Please enter a fraction: ";
+        cin>>num>>c>>den;
+        if(den==0)
+        {
+            cout<<"Sorry, a fraction divide by zero is not possible."<<endl;
+        }   
+        else break;
+    }  
 }
 void reduce(int &num,int &den)
 {
